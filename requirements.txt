@@ -1,0 +1,25 @@
+# FastAPI for building the RESTful API
+fastapi==0.95.2
+uvicorn[standard]==0.22.0  # ASGI server to run the FastAPI app
+
+# Hugging Face Transformers and Diffusers for model integration
+transformers==4.31.0
+diffusers==0.16.1
+accelerate==0.21.0  # For handling efficient model loading and running on GPU or CPU
+
+# Image processing
+Pillow==9.5.0  # For handling and processing images (PIL)
+
+# Handling JSON and environment variables
+json5==0.9.11  # For enhanced JSON support
+python-dotenv==1.0.0  # For managing environment variables
+
+# Additional utilities and dependencies
+requests==2.31.0  # For making HTTP requests (if needed)
+nest-asyncio==1.5.6  # For managing async loops in FastAPI
+
+# PyTorch for model inference and compatibility with Hugging Face models
+torch==2.0.1+cu117  # Specify the correct CUDA version if applicable (e.g., cu117 for CUDA 11.7)
+
+# Optional: pyngrok for public URL testing
+pyngrok==5.1.0
